@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Maledetto Trattoria - Riserva</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+          <img id="logo" src="Logo Maledetto.png" alt="Maledetto">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="maledetto.html">Maledetto</a>
+            <a href="carta.html">Carta</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
+    </header>
+    <section>
+        <div id="rerservasub" class="">
+          <h1> Rerservas </h1>
+        <p style="font-weight: bold;" class="rerservasub"> ¡Realiza tu reserva!</p>
+
+        <form id="form1" name="form1" method="post" action="gracias.html" width="300" >
+
+          <div class="reservasub"><form id="reservasub" name="form1" method="post">
+            <fieldset>
+              <p>
+                <label style="font-weight: bold;"for="nombre">Nombre y Apellido:</label>
+                <input type="text" required name="nombre" id="nombre" />
+              </p>
+               <p>
+                <label style="font-weight: bold;"for="día">Día:</label>
+                <select name="Día" required id="día">
+                  <option value="-1" selected>Seleccione Día </option>
+                  <option value="Miercoles">21/04</option>
+                  <option value="Jueves">22/04</option>
+                  <option value="Viernes">23/04</option>
+                  <option value="Sabado">24/04</option>
+                  <option value="Domingo">25/04</option>
+                </select>
+              </p>
+                <label style="font-weight: bold;" >Horario: </label>
+                  <input style="font-weight: bold;"type="checkbox" name="horario" value="1" id="horario_1" /> 12:30 |
+                  <input style="font-weight: bold;"type="checkbox" name="horario" value="2" id="horario_2" /> 13:30 |
+                  <input style="font-weight: bold;"type="checkbox" name="horario" value="3" id="horario_3" /> 14:30 |
+                  <input style="font-weight: bold;"type="checkbox" name="horario" value="4" id="horario_4" /> 20:30 |
+                  <input style="font-weight: bold;"type="checkbox" name="horario" value="4" id="horario_5" /> 21:00 |
+      			 <input style="font-weight: bold;"type="checkbox" name="Gustos" value="5" id="horario_6" /> 21:30 |
+             <input style="font-weight: bold;"type="checkbox" name="Gustos" value="5" id="horario_7" /> 22:00 |
+             <input style="font-weight: bold;"type="checkbox" name="Gustos" value="5" id="horario_7" /> 22:30
+             </p>
+             <p><label style="font-weight: bold;" for="email">Email:</label>
+                  <input type="email" required name="email" id="email" />
+                </p>
+                <p>
+              <p><label></label></p>
+      		 <p><label style="font-weight: bold;"for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+              </p>
+              <label><input type="submit" value="Enviar"><a href="gracias.html"> </a></label>
+              </fieldset>
+            </form>
+          </div>
+      	</div>
+
+
+
+
+</section>
+
+<footer>
+  <p> Matias Rabaglia </p>
+  <p> Maledetto Trattoria </p>
+  <p> <a href="https://goo.gl/maps/CqcESmXdLbMVtsgZ7">Rosales 330 - Ramos Mejia </p>
+</footer>
+</body>
+</html>
