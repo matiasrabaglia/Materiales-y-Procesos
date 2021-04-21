@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+/* css Document*/
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: , sans-serif;
+    margin: 0;
+}
+
+Header {
+    color: black;
+    font-size: xx-large;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 120px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-equal {
+    display: flex;
+}
+
+.info-container {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info-container a{
+  text-decoration: none;
+  text-decoration: none;
+    color: #fff;
+}
+.info-container:hover span {
+    text-decoration: underline;
+    color: white;
+}
+
+#test {
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+#info {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-image: url(img/cocina.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+}
+#info a{
+  color: #fff;
+
+
+}
+#ubicación {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-image: url(img/interior.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#ubicacion a{
+  color: #fff;
+}
+#carta {
+    text-align: center;
+    /* line-height: 33; */
+    color: white;
+    text-decoration: none;
+    background-image: url(img/platocarta.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+}
+
+#carta a{
+  color: #fff;
+
+}
+
+.carta p {
+    margin-bottom: 0;
+
+}
+#cartasub .titulo {
+  font-size: 50px;
+}
+#reservas {
+    height: 500px;
+    text-align: center;
+    /* line-height: 33; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/reservas.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+}
+#reservas a{
+  color: #fff;
+}
+#rerservasub {
+  background-image: url(img/reservas.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+}
+footer {
+    background: black;
+    text-align: right;
+    clear: both;
+    color: white;
+    overflow: auto;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    margin-top: 0;
+}
+
+footer p.final {
+    margin-bottom: 0;
+}
+
+nav {
+    text-align: right;
+    /* margin: -81px; */
+    /* width: 1500px; */
+}
+
+nav a {
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: none;
+    text-decoration: none;
+    padding-right: 2px;
+    text-align: right;
+}
+
+nav a:hover {
+    /* background-color: green; */
+    color: red;
+}
+
+#logo{
+    height: 110px;
+    border: 5px;
+}
+.cartasub {
+  text-align: center;
+}
+
+.platos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.platos .plato{
+  height: 20rem;
+  /* flex: 1 0 100%; */
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.plato .nombre-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000d6;
+  color: #fff;
+}
+
+.plato:hover .nombre-container{
+  opacity: 1;
+}
+
+@media (min-width: 500px){
+  .platos .plato{
+    /* flex-basis: 50%; */
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 998px){
+  .platos .plato{
+    /* flex-basis: 33%; */
+    max-width: 33.3333%;
+  }
+.qsub  {
+  background-color: lightgrey;
+  color: black;
+}
+.gracias {
+  text-align: center;
+  color: black;
+}
+#logo2 {
+  image-orientation: center;
+  height: 110px;
+  border: 5px;
+}
+
+.slide-contenedor{
+    max-width:100%;
+    max-height: 100vh;
+    width: 50%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+    /* margin: auto; */
+}
+
+/* .miSlider{
+    display: none;
+    transition: 2s;
+    max-height: 100vh;
+} */
+
+.miSlider img{
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+
+.direcciones{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.direcciones a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+
+
+}
+
+.direcciones a:hover{
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.barras{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:15px;
+}
+
+.barra{
+    cursor: pointer;
+    height:2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.active{
+    background-color: #e74c3c;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to{opacity:1;}
+}
+.slide-conteiner {
+    position: relative;
+    width: 100%;
+}
